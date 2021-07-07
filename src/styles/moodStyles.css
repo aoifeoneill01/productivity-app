@@ -1,0 +1,102 @@
+.note-title.m{
+    color: #33B831;
+    margin-left: 15%;
+}
+.add-icon.m{
+    margin: 0;
+    margin-left: 5%;
+    position: absolute;
+    top: 40px;
+}
+.m-container{
+    display: flex;
+    flex-direction: column;
+}
+.note-container.m{
+    margin-left: 0;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.upload-c{
+    display: flex;
+    flex-direction: column;
+    background-color: #d1d1d1;
+    width: 260px;
+    border-radius: 30px;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.upload-c img{
+    width: 26px;
+    position: absolute;
+}
+#upload-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+#upload-input::before{
+    content: 'Click to upload';
+}
+#upload-input{
+    width: 110px;
+    padding: 40px 70px 0;
+    height: inherit;
+    border-radius: 20px;
+    border: 2.5px solid rgba(0,0,0,0.2);
+    border-style: dashed;
+    background-color: #d1d1d1;
+}
+.upload-c:hover > #upload-input{
+    background-color: #bfbfbf;
+    cursor: pointer;
+}
+.upload-c:hover {
+    background-color: #bfbfbf;
+    cursor: pointer;
+}
+.addmood-c form{
+    background-color: #EEEEEE;
+    padding: 50px 40px 40px;
+    width: 40%;
+    min-width: 340px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 16px rgb(0 0 0 / 30%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addmood-c{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.exit{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.exit:hover, .add:hover{
+    cursor: pointer;
+}
+.display{
+    display: flex;
+}
+.m-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin: 40px;
+}
+.m-grid img{
+    width: 100%;
+    border-radius: 20px;
+}
+.m-add-buttons{
+    margin-top: 30px;
+}

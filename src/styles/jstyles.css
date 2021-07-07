@@ -1,0 +1,94 @@
+.j-container{
+  margin-top: 60px;
+}
+.body ul{
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    width: 700px;
+}
+.j-form{
+    margin: 40px 0;
+    width: 800px;
+}
+textarea{
+    font-family: kings-caslon, sans-serif;
+    background: none;
+    font-size: 21px;
+    line-height: 1.6;
+  }
+  .btn{
+      background: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      color: #3B42FF;
+      margin: 10px;
+      width: 110px;
+      font-weight: 600;
+      font-size: 12px;
+  }
+  .btn:hover{
+      cursor: pointer;
+  }
+  form div{
+    display: flex;
+  }
+  .journal.save{
+    border: 1px solid #3B42FF;
+    color: #3B42FF;
+  }
+  .journal.save:hover{
+    background-color: #3B42FF;
+    color: white;
+  }
+  .journal.discard{
+    border: 1px solid #696969;
+    color: #696969;
+  }
+  .journal.discard:hover{
+    background-color: #696969;
+    color:white;
+  }
+  li{
+    list-style-type: none;
+  }
+  .questions h3{
+    color: #FF9542;
+    margin-right: 40px;
+  }
+  .questions{
+    display: flex;
+    margin-top: 40px;
+  }
+  .edit-body{
+    position: absolute;
+    flex-direction: column;
+  }
+  .edit-body textarea{
+    padding: 0;
+  }
+  .journal-list, .note-list{
+    white-space: pre-wrap;
+    font-size: 21px;
+    margin: 20px 0;
+    font-family: 'kings-caslon';
+    line-height: 1.6;
+    width: 700px;
+  }
+  .hideForm{
+    display: none;
+  }
+  .note-list, .edit-note, .n-form textarea{
+    font-size: 24px;
+  }
+  .note-list{
+    margin-top: 60px;
+  }
+  .edit-n-form{
+    position: absolute;
+  }
+
