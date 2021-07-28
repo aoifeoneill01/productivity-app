@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Questions from './J-questions';
 const axios = require('axios');
 
 const AddJournal = ({ setBody, addForm, setAddForm }) => {
@@ -55,7 +54,7 @@ const AddJournal = ({ setBody, addForm, setAddForm }) => {
     return(
         <div className="j-form">
             <form className={addForm ? "addJournalForm" : "hideForm"} >
-              <textarea value={text.body} name="body" rows={rows} placeholder="Begin typing here" style={{ minHeight: "25vh", height: "unset" }}
+              <textarea value={text.body} name="body" rows={rows} placeholder="Begin typing here" style={{ minHeight: "35vh", height: "unset" }}
                 onChange={handleChange}>
               </textarea>
              <div className={buttons ? 'show' : 'hide'}>
@@ -63,7 +62,6 @@ const AddJournal = ({ setBody, addForm, setAddForm }) => {
                <button className="btn journal discard" onClick={discard}>Discard</button>
              </div>
             </form>
-            <Questions />
         </div>
     )
 }

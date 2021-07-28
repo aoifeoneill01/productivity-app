@@ -14,10 +14,10 @@ const Journal = ({ editForm, setEditForm, body, setBody, addForm, setAddForm }) 
         fetch('/journal')
         .then(res => {
             return res.json()
-        }) .then(res => { 
+        }).then(res => { 
             // eslint-disable-line react-hooks/exhaustive-deps
             setBody(res);
-            if(body.length >= 1){
+            if(res.length >= 1){
                 setAddForm(false);
             } else{
                 setAddForm(true);

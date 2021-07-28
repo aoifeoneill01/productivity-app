@@ -1,13 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const dotenv= require('dotenv');
+require('dotenv').config();
 
-dotenv.config({ path: './config/config.env'})
+const DBURI = process.env.DBURI;
 
 const app = express();
 
-const dbURI = '<enter db credentials>';
+const dbURI = DBURI;
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 .then((result) => console.log('connected to db'))
 .catch((err) => console.log(err));
@@ -20,5 +20,5 @@ app.use('/', require('./routes/journalRoute'));
 app.use('/', require('./routes/noteRoute'));
 app.use('/', require('./routes/boardRoute'));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, console.log(`server running on port ${PORT}`));

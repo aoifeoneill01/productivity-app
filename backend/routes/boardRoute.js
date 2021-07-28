@@ -12,17 +12,14 @@ const fileStorageEngine = multer.diskStorage({
         cb(null, file.originalname)
     }
 });
-
 const upload = multer({ storage: fileStorageEngine});
 
+
+// Post new image to moodboard
 router.post('/board', upload.single("file"),(req, res) => {
     console.log(req.file);
     res.send('file uploaded');
 });
 
-router.get('/board/:fileName', function (req, res) {
-    const filePath = file.originalname;
-    res.sendFile(filepath);
-});
 
 module.exports = router;

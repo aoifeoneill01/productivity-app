@@ -3,7 +3,6 @@ import Todo from './Todo';
 import Habit from './Habit';
 import Journal from './Journal';
 import Moodboard from './Moodboard';
-import Week from './Week';
 import Icons from './Icons';
 import Notes from './Notes';
 import { useState, useEffect } from 'react';
@@ -87,9 +86,6 @@ function App() {
               <Icons />
           </section>
          </div>
-       </Route>
-       <Route exact path="/week">
-         <Week />
        </Route>
        <Route exact path="/moodboard">
          <Moodboard />

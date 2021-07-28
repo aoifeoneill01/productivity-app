@@ -162,7 +162,7 @@ ul{
   cursor: pointer;
 }
 .check{
-  fill: #3B42FF;
+  fill: #3B42FF !important;
   opacity: 1!important;
 }
 .icon{

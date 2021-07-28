@@ -86,7 +86,7 @@ const Notes = () => {
         e.preventDefault();
         const id = e.target.id;
 
-        axios.delete(`/notes/${id}`, )
+        axios.delete(`/notes/${id}`)
         .then(res => console.log(res))
         .catch(err => console.log(err));
 
